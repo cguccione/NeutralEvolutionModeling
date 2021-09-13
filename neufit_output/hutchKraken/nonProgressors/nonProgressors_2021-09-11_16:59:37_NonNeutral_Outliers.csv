@@ -1,0 +1,5 @@
+	Difference off Neutral Model	Kingdom	Phylum	Class	Order	Family	Genus	Species
+1	0.9555360610418302	k__Viruses	p__Peploviricota	c__Herviviricetes	o__Herpesvirales	f__Herpesviridae	g__Roseolovirus	s__Human betaherpesvirus 6B
+2	0.7277774391274494	k__Bacteria	p__Proteobacteria	c__Epsilonproteobacteria	o__Campylobacterales	f__Helicobacteraceae	g__Helicobacter	s__pylori
+3	0.6611109950214302	k__Bacteria	p__Proteobacteria	c__Gammaproteobacteria	o__Pasteurellales	f__Pasteurellaceae	g__Haemophilus	s__parahaemolyticus
+0	0.5202904334751227	k__Bacteria	p__Bacteroidetes	c__Bacteroidia	o__Bacteroidales	f__Tannerellaceae	g__Tannerella	s__sp. oral taxon HOT-286

@@ -1,0 +1,99 @@
+Corresponding csv file: /home/cguccion/NeutralEvolutionModeling/data_tax_csv/progressorsT2_data.csv
+Dataset contains 80 samples (sample_id, reads): 
+PCGA-1065-BE-01_tumor_mkdp_REPORT	4611
+PCGA-1065-BE-02_tumor_mkdp_REPORT	9085
+PCGA-1066-BE-02_tumor_mkdp_REPORT	3827
+PCGA-1066-BE-04_tumor_mkdp_REPORT	3698
+PCGA-1069-BE-02_tumor_mkdp_REPORT	89508
+PCGA-1069-BE-04_tumor_mkdp_REPORT	8203
+PCGA-1073-BE-03_tumor_mkdp_REPORT	9853
+PCGA-1073-BE-04_tumor_mkdp_REPORT	4498
+PCGA-1074-BE-03_tumor_mkdp_REPORT	3731
+PCGA-1074-BE-04_tumor_mkdp_REPORT	2303
+PCGA-1075-BE-03_tumor_mkdp_REPORT	34283
+PCGA-1075-BE-04_tumor_mkdp_REPORT	4902
+PCGA-1079-BE-02_tumor_mkdp_REPORT	4086
+PCGA-1079-BE-03_tumor_mkdp_REPORT	3790
+PCGA-1080-BE-01_tumor_mkdp_REPORT	8953
+PCGA-1080-BE-03_tumor_mkdp_REPORT	3018
+PCGA-1081-BE-01_tumor_mkdp_REPORT	6470
+PCGA-1081-BE-02_tumor_mkdp_REPORT	4193
+PCGA-1082-BE-03_tumor_mkdp_REPORT	79803
+PCGA-1082-BE-04_tumor_mkdp_REPORT	13864
+PCGA-1084-BE-01_tumor_mkdp_REPORT	3677
+PCGA-1084-BE-04_tumor_mkdp_REPORT	22784
+PCGA-1088-BE-03_tumor_mkdp_REPORT	6219
+PCGA-1088-BE-04_tumor_mkdp_REPORT	4149
+PCGA-1089-BE-01_tumor_mkdp_REPORT	3739
+PCGA-1089-BE-04_tumor_mkdp_REPORT	4664
+PCGA-1090-BE-03_tumor_mkdp_REPORT	2382
+PCGA-1090-BE-04_tumor_mkdp_REPORT	415164
+PCGA-1091-BE-01_tumor_mkdp_REPORT	19595
+PCGA-1091-BE-02_tumor_mkdp_REPORT	6618
+PCGA-1092-BE-01_tumor_mkdp_REPORT	14900
+PCGA-1092-BE-04_tumor_mkdp_REPORT	13162
+PCGA-1094-BE-02_tumor_mkdp_REPORT	12009
+PCGA-1094-BE-03_tumor_mkdp_REPORT	4319
+PCGA-1097-BE-03_tumor_mkdp_REPORT	4633
+PCGA-1097-BE-04_tumor_mkdp_REPORT	2889
+PCGA-1099-BE-01_tumor_mkdp_REPORT	19014
+PCGA-1099-BE-04_tumor_mkdp_REPORT	20918
+PCGA-1101-BE-03_tumor_mkdp_REPORT	3884
+PCGA-1101-BE-04_tumor_mkdp_REPORT	3006
+PCGA-1102-BE-03_tumor_mkdp_REPORT	41518
+PCGA-1102-BE-04_tumor_mkdp_REPORT	13967
+PCGA-1108-BE-01_tumor_mkdp_REPORT	6787
+PCGA-1108-BE-02_tumor_mkdp_REPORT	5971
+PCGA-1109-BE-02_tumor_mkdp_REPORT	9163
+PCGA-1109-BE-03_tumor_mkdp_REPORT	5937
+PCGA-1114-BE-03_tumor_mkdp_REPORT	10917
+PCGA-1114-BE-04_tumor_mkdp_REPORT	2338
+PCGA-1115-BE-01_tumor_mkdp_REPORT	5732
+PCGA-1115-BE-04_tumor_mkdp_REPORT	7636
+PCGA-1116-BE-01_tumor_mkdp_REPORT	11731
+PCGA-1116-BE-03_tumor_mkdp_REPORT	4487
+PCGA-1117-BE-03_tumor_mkdp_REPORT	52025
+PCGA-1117-BE-04_tumor_mkdp_REPORT	7599
+PCGA-1118-BE-01_tumor_mkdp_REPORT	3363
+PCGA-1118-BE-02_tumor_mkdp_REPORT	5041
+PCGA-1120-BE-03_tumor_mkdp_REPORT	3257
+PCGA-1120-BE-04_tumor_mkdp_REPORT	12058
+PCGA-1121-BE-01_tumor_mkdp_REPORT	2127
+PCGA-1121-BE-02_tumor_mkdp_REPORT	2221
+PCGA-1122-BE-03_tumor_mkdp_REPORT	3890
+PCGA-1122-BE-04_tumor_mkdp_REPORT	4233
+PCGA-1124-BE-02_tumor_mkdp_REPORT	10363
+PCGA-1124-BE-04_tumor_mkdp_REPORT	6223
+PCGA-1125-BE-03_tumor_mkdp_REPORT	4830
+PCGA-1125-BE-04_tumor_mkdp_REPORT	9325
+PCGA-1126-BE-01_tumor_mkdp_REPORT	34634
+PCGA-1126-BE-04_tumor_mkdp_REPORT	31829
+PCGA-1129-BE-01_tumor_mkdp_REPORT	2813
+PCGA-1129-BE-04_tumor_mkdp_REPORT	3492
+PCGA-1135-BE-03_tumor_mkdp_REPORT	3498
+PCGA-1135-BE-04_tumor_mkdp_REPORT	106659
+PCGA-1136-BE-03_tumor_mkdp_REPORT	2818
+PCGA-1136-BE-04_tumor_mkdp_REPORT	12638
+PCGA-1139-BE-03_tumor_mkdp_REPORT	4660
+PCGA-1139-BE-04_tumor_mkdp_REPORT	3028
+PCGA-1140-BE-02_tumor_mkdp_REPORT	5850
+PCGA-1140-BE-03_tumor_mkdp_REPORT	4894
+PCGA-1141-BE-01_tumor_mkdp_REPORT	2863
+PCGA-1141-BE-02_tumor_mkdp_REPORT	64075
+
+rarefying to highest possible uniform read depth(2127 reads per sample) 
+fitting neutral expectation to dataset with 80 samples and 3988 otus 
+ 
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 17
+    # data points      = 3988
+    # variables        = 1
+    chi-square         = 18.8623427
+    reduced chi-square = 0.00473096
+    Akaike info crit   = -21349.2640
+    Bayesian info crit = -21342.9730
+[[Variables]]
+    N:  2127 (fixed)
+    m:  0.27188636 +/- 0.00902171 (3.32%) (init = 0.5)
+ R^2 = 0.75

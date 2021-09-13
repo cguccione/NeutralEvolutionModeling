@@ -1,0 +1,6 @@
+	Difference off Neutral Model	Kingdom	Phylum	Class	Order	Family	Genus	Species
+2	0.962040463272503	k__Viruses	p__Peploviricota	c__Herviviricetes	o__Herpesvirales	f__Herpesviridae	g__Roseolovirus	s__Human betaherpesvirus 6A
+1	0.9352812990004576	k__Viruses	p__Peploviricota	c__Herviviricetes	o__Herpesvirales	f__Herpesviridae	g__Roseolovirus	s__Human betaherpesvirus 6B
+3	0.7617468475151041	k__Bacteria	p__Proteobacteria	c__Epsilonproteobacteria	o__Campylobacterales	f__Helicobacteraceae	g__Helicobacter	s__pylori
+4	0.6294026545535455	k__Bacteria	p__Proteobacteria	c__Gammaproteobacteria	o__Pasteurellales	f__Pasteurellaceae	g__Haemophilus	s__parahaemolyticus
+0	0.5800507085495473	k__Bacteria	p__Proteobacteria	c__Gammaproteobacteria	o__Pseudomonadales	f__Pseudomonadaceae	g__Pseudomonas	s__sp. J380

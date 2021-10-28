@@ -1,6 +1,6 @@
 # NeutralEvolutionModeling
 
-Creates graphs which fit the expected long-term neutral community composition derived by Sloan et al. (2006) to species abundance tables, such as OTU abundance tables obtained by 16S sequencing and Whole Genome Seqencing (WGS) following Kraken of microbial communities.
+Creates graphs which fit the expected long-term neutral community composition derived by Sloan et al. (2006) to species abundance tables, such as OTU abundance tables obtained by 16S sequencing and Whole Genome Seqencing (WGS) + Kraken of microbial communities.
 
 ![image](https://user-images.githubusercontent.com/25289269/139208775-c52e27d1-fab2-448d-b4ec-8d0d6017d447.png)
 

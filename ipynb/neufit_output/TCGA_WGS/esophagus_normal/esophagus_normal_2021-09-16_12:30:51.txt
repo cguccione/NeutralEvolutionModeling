@@ -1,0 +1,43 @@
+Corresponding csv file: /home/cguccion/NeutralEvolutionModeling/data_tax_csv/esophagus_normal_data.csv
+Dataset contains 24 samples (sample_id, reads): 
+13722.58cfa832e4b0c9d6adf6d360	116764
+13722.58cfa832e4b0c9d6adf6d352	209889
+13722.58cfa832e4b0c9d6adf6d51e	76952
+13722.58cfa832e4b0c9d6adf6d358	144608
+13722.58cfa832e4b0c9d6adf6d52a	103418
+13722.58cfa832e4b0c9d6adf6d364	115110
+13722.58cfa832e4b0c9d6adf6d370	87527
+13722.58cfa832e4b0c9d6adf6d396	148704
+13722.58cfa832e4b0c9d6adf6d3cc	12386
+13722.58cfa83ce4b0c9d6adf73066	11939
+13722.58cfa82de4b0c9d6adf6a566	1669035
+13722.58cfa82de4b0c9d6adf6a6c2	7202
+13722.58cfa83ce4b0c9d6adf72f41	219235
+13722.58cfa83ce4b0c9d6adf73102	13553
+13722.58cfa82de4b0c9d6adf6a671	3195
+13722.58cfa832e4b0c9d6adf6d35a	211266
+13722.58cfa832e4b0c9d6adf6d52c	1657128
+13722.58cfa832e4b0c9d6adf6d552	64775
+13722.58cfa832e4b0c9d6adf6d366	126027
+13722.58cfa832e4b0c9d6adf6d38c	87080
+13722.58cfa832e4b0c9d6adf6d3ba	138612
+13722.58cfa832e4b0c9d6adf6d346	84141
+13722.58cfa832e4b0c9d6adf6d06e	676342
+13722.58cfa832e4b0c9d6adf6d51a	190727
+
+rarefying to highest possible uniform read depth(3195 reads per sample) 
+fitting neutral expectation to dataset with 24 samples and 744 otus 
+ 
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 47
+    # data points      = 744
+    # variables        = 1
+    chi-square         = 10.9846717
+    reduced chi-square = 0.01478421
+    Akaike info crit   = -3134.36192
+    Bayesian info crit = -3129.74988
+[[Variables]]
+    N:  3195 (fixed)
+    m:  0.01227477 +/- 9.9802e-04 (8.13%) (init = 0.5)
+ R^2 = 0.05

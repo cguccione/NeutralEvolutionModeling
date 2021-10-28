@@ -1,0 +1,43 @@
+Corresponding csv file: /home/cguccion/NeutralEvolutionModeling/data_tax_csv/head_neck_normal_data.csv
+Dataset contains 24 samples (sample_id, reads): 
+13722.58cfa831e4b0c9d6adf6c722	96580
+13722.58cfa831e4b0c9d6adf6c71a	163523
+13722.58cfa831e4b0c9d6adf6c86c	57320
+13722.58cfa831e4b0c9d6adf6c874	99851
+13722.58cfa831e4b0c9d6adf6c7d2	231817
+13722.58cfa831e4b0c9d6adf6c6aa	689019
+13722.58cfa831e4b0c9d6adf6c7b5	147846
+13722.58cfa831e4b0c9d6adf6c6f0	964259
+13722.58cfa831e4b0c9d6adf6c6f2	290884
+13722.58cfa831e4b0c9d6adf6c6fe	336987
+13722.58cfa831e4b0c9d6adf6c7a2	294454
+13722.58cfa831e4b0c9d6adf6c7fc	1754147
+13722.58cfa831e4b0c9d6adf6c70a	179389
+13722.58cfa82ee4b0c9d6adf6a7be	160661
+13722.58cfa82ee4b0c9d6adf6aa2e	153273
+13722.58cfa82ee4b0c9d6adf6aa32	688537
+13722.58cfa831e4b0c9d6adf6c6a6	144971
+13722.58cfa831e4b0c9d6adf6c7e3	81554
+13722.58cfa831e4b0c9d6adf6c7e8	137273
+13722.58cfa831e4b0c9d6adf6c79b	72460
+13722.58cfa831e4b0c9d6adf6c6b8	442462
+13722.58cfa831e4b0c9d6adf6c7e7	1132430
+13722.58cfa831e4b0c9d6adf6c882	168284
+13722.58cfa831e4b0c9d6adf6c792	778425
+
+rarefying to highest possible uniform read depth(57320 reads per sample) 
+fitting neutral expectation to dataset with 24 samples and 2711 otus 
+ 
+[[Fit Statistics]]
+    # fitting method   = leastsq
+    # function evals   = 33
+    # data points      = 2711
+    # variables        = 1
+    chi-square         = 64.7047544
+    reduced chi-square = 0.02387629
+    Akaike info crit   = -10124.2307
+    Bayesian info crit = -10118.3256
+[[Variables]]
+    N:  57320 (fixed)
+    m:  0.02627698 +/- 0.00116239 (4.42%) (init = 0.5)
+ R^2 = 0.35

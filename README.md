@@ -4,6 +4,11 @@ Creates graphs which fit the expected long-term neutral community composition de
 
 ![image](https://user-images.githubusercontent.com/25289269/139208775-c52e27d1-fab2-448d-b4ec-8d0d6017d447.png)
 
+## Installation 
+
+```bash
+pip install -e.
+```
 
 Modified by: Caitlin Guccione
     

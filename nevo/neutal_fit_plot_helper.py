@@ -1,5 +1,5 @@
 from matplotlib import pyplot
-from nevo.neutal_fit_plot import neufit_plot
+from nevo.neutral_fit_plot import neufit_plot
 
 def custom_color_plot(occurr_freqs, n_reads, n_samples, r_square, beta_fit, file_header):
     '''Adds species/phylum specific coloring to the neutral evolution plot

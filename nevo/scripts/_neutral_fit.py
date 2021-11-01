@@ -61,7 +61,7 @@ def standalone_neufit(fnData : str,
                       colored_graph : bool = True,
                       non_neutral : bool = True,
                       non_save : bool = False,
-                      full_non_neutral : bool = False):
+                      full_non_neutral : bool = True):
     '''Calls all functions needed to create neutral model 
     
     Written by: Caitlin Guccione, 08-25-2021

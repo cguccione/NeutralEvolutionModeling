@@ -5,6 +5,7 @@ from datetime import datetime
 from statsmodels.stats.proportion import proportion_confint 
 from matplotlib import pyplot
 from math import log10
+from nevo.neutral_fit_utils import beta_cdf
 
 def neufit_plot(occurr_freqs, n_reads, n_samples, r_square, beta_fit, file_header):
     '''Creates the neutral evolution png plot 

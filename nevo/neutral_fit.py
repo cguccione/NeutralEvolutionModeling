@@ -7,11 +7,13 @@ from lmfit import Parameters, Model, fit_report
 from scipy.stats import beta 
 from statsmodels.stats.proportion import proportion_confint 
 from nevo.neutral_fit_utils import beta_cdf, subsample
-from nevo.neuplot import neufit_plot
+from nevo.neutral_fit_plot import neufit_plot
+from nevo.utils import biom2data_tax, biom_addMetaTax_customTCGAehn, non_neutral_outliers
+from nevo.neutal_fit_plot_helper import custom_color_plot, save_plot
 
 def nevo_pipeline(output_filename, dataset_type, custom_filename, 
                   norm_graph = True, colored_graph = True, non_neutral = True, 
-                  non_save = False, full_non_neutral = False):
+                  non_save = False, full_non_neutral = True):
     
     '''Calls all functions needed to create neutral model 
     
@@ -61,11 +63,13 @@ def nevo_pipeline(output_filename, dataset_type, custom_filename,
     and below because it is too specific
     - Determine how to not create Neufit text file that ends up getting 
     deleted
+    - Change full_no_neutral to not be parameter?
     
     '''
     
     #Convert data from biom to csv files for Neufit
     if dataset_type == 'hutchKraken':
+        hutchKrakenAlex_biom = '/home/cguccion/rawData/01_11_2021_Hutch340_BE_Samples_LudmilAlexandrov/biom'
         fnData, fnTaxonomy = biom2data_tax(hutchKrakenAlex_biom, 
                                            custom_filename, output_filename)
     elif dataset_type == 'TCGA_WGS':
@@ -75,12 +79,13 @@ def nevo_pipeline(output_filename, dataset_type, custom_filename,
         elif output_filename == 'cancer':
             biomFilename ='116639_feature-table-TCGA-WGS-PT-ESCA-HNSC.biom'
         
-        #Turn biome file into _data and _tax files
-        fnD_hn, fnD_e, fnT_hn, fnT_e, fnD_e_scc, fnT_e_scc, fnD_e_eac, 
-        fnT_e_eac = biom_addMetaTax_customTCGAehn(tcgaEhnWGSgreg_, 
-                                                  biomFilename, 
-                                                  output_filename)
+        tcgaEhnWGSgreg_ = '/home/cguccion/rawData/April2021_Greg_TCGA_WGS/raw_from_Greg'
+        #Location of raw data
         
+        #Turn biome file into _data and _tax files
+        fnD_hn, fnD_e, fnT_hn, fnT_e, fnD_e_scc, fnT_e_scc, fnD_e_eac, fnT_e_eac = biom_addMetaTax_customTCGAehn(tcgaEhnWGSgreg_,
+                                                                                                                 biomFilename,
+                                                                                                                 output_filename)
         #Choose the correct _data file, esoph or head and neck
         if custom_filename == 'e':
             fnData = fnD_e
@@ -93,19 +98,21 @@ def nevo_pipeline(output_filename, dataset_type, custom_filename,
         elif custom_filename == 'e_scc':
             fnData = fnD_e_scc
             fnTaxonomy = fnT_e_scc
-            output_filename = 'esophagus_squamousCellCarcinoma_' + \ 
-            output_filename
+            output_filename = 'esophagus_squamousCellCarcinoma_'\
+            + output_filename
         elif custom_filename == 'e_eac':
             fnData = fnD_e_eac
             fnTaxonomy = fnT_e_eac
-            output_filename = 'esophagus_adenocarcinoma_' + \ 
-            output_filename
+            output_filename = 'esophagus_adenocarcinoma_{}'.format(
+                output_filename
+            )
+            print(output_filename)
         
         
     #Run Neufit
-    occurr_freqs, n_reads, n_samples, r_square, beta_fit, 
-    file_header = main_neufit(output_filename, dataset_type, fnData, 
-                              fnTaxonomy, full_non_neutral)
+    occurr_freqs, n_reads, n_samples, r_square, beta_fit, file_header = neufit(output_filename, 
+                                                                               dataset_type, fnData,
+                                                                               fnTaxonomy, full_non_neutral)
     
     #Neufit Plotting and Non-neutral Outline
     if norm_graph == True: #Neutral evolution graph, no color
@@ -123,9 +130,11 @@ def nevo_pipeline(output_filename, dataset_type, custom_filename,
                              non_save)
         
     #Easier to delete the Neufit text file then to not create it
+    #Same is true of extermly non-neutral micorbes csv
     if non_save == True:
         neufit_fn= str(file_header) + ".txt"
         os.remove(neufit_fn)
+        os.remove((str(file_header) + '_FullNonNeutral.csv'))
 
 
 def neufit(output_filename, dataset_type, _data_filename, _taxonomy_filename, 
@@ -249,6 +258,10 @@ def neufit(output_filename, dataset_type, _data_filename, _taxonomy_filename,
     '''
     
     ##Added by Caitlin ~ Push output to file instead of printing to screen
+    
+    neufit_output_path = '/home/cguccion/NeutralEvolutionModeling/ipynb/neufit_output' 
+    #location of all graphs and command line outputs from running Neufit
+    
     
     #Grab and format data/time
     time = datetime.time(datetime.now())

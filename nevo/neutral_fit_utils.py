@@ -110,7 +110,8 @@ def subsample(counts, depth):
     return counts
 
 def non_negative_int(arg):
-    '''
+    '''Argparser type: non-negative int
+    
     Copyright
     ---------
     Github: https://github.com/misieber/neufit
@@ -155,7 +156,6 @@ def non_negative_int(arg):
     (2018). The Neutral Metaorganism. bioRxiv. https://doi.org/10.1101/367243
     '''
     
-    Argparser type: non-negative int
     nnint = int(arg)
     if nnint < 0:
         raise ArgumentTypeError(arg + ' < 0, must be non-negative')

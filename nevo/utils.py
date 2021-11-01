@@ -37,6 +37,9 @@ def biom2data_tax(datasetName, biomFilename, finalFilename):
      - Add more clear description of csv files 
      
       '''
+    neufit_input_path = '/home/cguccion/NeutralEvolutionModeling/ipynb/data_tax_csv' 
+    #location of _data.csv and _tax.csv files for Neufit input
+
     
     #Make filename and import data
     fullFilename = datasetName + '/' + biomFilename
@@ -104,6 +107,12 @@ def biom_addMetaTax_customTCGAehn(datasetName, biomFilename, finalFilename):
      
       '''
     
+    #Define filenames for meta and taxa files
+    tcgaEhnWGSgreg_ = '/home/cguccion/rawData/April2021_Greg_TCGA_WGS/raw_from_Greg'#Location of raw data
+    tcgaEhnWGSgreg_meta = str('/home/cguccion/rawData/April2021_Greg_TCGA_WGS/meta_expansion/13722_20210405-101126-TCGA-WGS-Qiita-sample-metadata_esoph_hnc_metaExpand.txt')
+    tcgaEhnWGSgreg_taxa = str(tcgaEhnWGSgreg_ + '/' + 'wol_gotu_taxonomy.csv')
+    
+    
     #Make filename and import all data into pandas df 
     fullFilename = datasetName + '/' + biomFilename
     featureTable = load_table(fullFilename) 
@@ -154,6 +163,9 @@ def biom_addMetaTax_customTCGAehn(datasetName, biomFilename, finalFilename):
             print("something is off in the dataset -- not just Head and Neck and Esophagus")
         
     #Create _data.csv and _taxonomy.csv files for head & neck and esophgous
+    
+    neufit_input_path = '/home/cguccion/NeutralEvolutionModeling/ipynb/data_tax_csv' 
+    #location of _data.csv and _tax.csv files for Neufit input
     
     #Head and Neck
     fnD_hn = neufit_input_path + '/' + 'head_neck_' + \
